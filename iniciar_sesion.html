@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<header>
+     <!-- Topbar Start -->
+     <div class="container-fluid bg-dark text-light px-0 py-2">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <span class="fa fa-phone-alt me-2"></span>
+                    <span>+57 311 888 0100</span>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <span class="far fa-envelope me-2"></span>
+                    <span>syscoco@syscoco.com</span>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    <span>Sigue nuestras redes:</span>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h1 class="m-0">SysCoco</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="about.html" class="nav-item nav-link">Informacion</a>
+                <div class="nav-item dropdown">
+                    <a href="feature.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">soluciones educativas</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="feature.html" class="dropdown-item">solución academica</a>
+                        <a href="feature2.html" class="dropdown-item">solución adminstrativa</a>
+                        <a href="feature3.html" class="dropdown-item">solución electoral</a>
+                        
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contactenos</a>
+            </div>
+            <a href="iniciar_sesion.html" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Login<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+</header>
+<style>
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Asegura que el encabezado esté siempre visible */
+    }
+
+    body.iniciar_sesion {
+        margin: 0;
+        padding-top: 90px; /* Asegura que el contenido no se superponga al header */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url('img/fuond.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .form-login {
+        background-color: rgba(255, 255, 255, 0.5); /* Aumenta ligeramente la opacidad */
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .form-login h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .form-login .form-group label {
+        font-weight: 500;
+        color: #333;
+        font-size: 0.8rem;
+    }
+
+    .form-login .form-control {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+
+    .btn-primary {
+        background-color: #5b9748;
+        border-color: #5b9748;
+        font-size: 0.8rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .btn-primary:hover {
+        background-color: #4d8640;
+    }
+
+    .form-login p {
+        font-size: 0.8rem;
+        text-align: center;
+        color: #000;
+    }
+</style>
+
+
+<body class="iniciar_sesion">
+    
+    <div class="form-login">
+        <h2>Iniciar Sesion</h2>
+        <form asp-action="Login" method="post">
+            <div class="form-group">
+                <label for="correo">Correo Electrónico</label>
+                <input asp-for="correo" type="email" class="form-control" placeholder="Correo Electrónico" />
+                <span asp-validation-for="correo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="contraseña">Contraseña</label>
+                <input asp-for="contraseña" type="password" class="form-control" placeholder="Contraseña" />
+                <span asp-validation-for="contraseña" class="text-danger"></span>
+            </div>
+            <a href="welcome_student.html" class="btn btn-primary btn-block">Iniciar Sesión</a>
+            <p class="mt-3">¿No tienes una cuenta? <a href='registro.html'>Regístrate</a></p>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@3.2.11/dist/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>
