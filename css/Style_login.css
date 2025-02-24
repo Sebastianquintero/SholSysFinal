@@ -1,0 +1,33 @@
+:root{
+    --dark: #16191c;
+    --dark-x: #1e2126;
+    --lightt: #ffffff;
+}
+body{
+    font-family: "League Spartan", serif;
+    font-weight: 300;
+    color: var(--lightt);
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/Quimica_ScholSys.jpg') no-repeat center center/cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+.bg-dark{
+    background-color: var(--dark) !important;
+}
+.bg-dark-x{
+    background-color: var(--dark-x);
+}
+
+.form-control, .btn{
+    min-height: 3.125rem;
+    line-height: initial;
+}
+
