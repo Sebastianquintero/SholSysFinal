@@ -92,10 +92,17 @@ h6,
 
 
 /*** Navbar ***/
-.navbar.sticky-top {
-    top: -100px;
-    transition: .5s;
+/* Hace que el navbar permanezca fijo en la parte superior */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    background-color: white; /* Cambia si deseas otro color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .navbar .navbar-brand,
 .navbar a.btn {
