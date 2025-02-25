@@ -76,26 +76,21 @@
 
                     <!-- Inicio de formulario, Con Label, Input -->
                     <div class="form-container">
-                        <form action="welcome_student.html">
+                        <form action="login.php" method="POST">
                             <div class="mb-4">
-                                <label for="exampleInputEmail1" class="form-label font-weight-bold mb-3">Correo o
-                                    Usuario</label>
-                                <input type="email" class="form-control bg-dark-x border-0 mt-4"
-                                    placeholder="Ingresa tu Correo" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp">
+                                <label for="usuario" class="form-label font-weight-bold mb-3">Correo o Usuario</label>
+                                <input type="text" name="usuario" class="form-control bg-dark-x border-0 mt-4"
+                                    placeholder="Ingresa tu usuario" id="usuario" required>
                             </div>
-
+                        
                             <div class="mb-4">
-                                <label for="exampleInputPassword1"
-                                    class="form-label font-weight-bold mb-3">Contraseña</label>
-                                <input type="password" class="form-control bg-dark-x border-0 mt-3"
-                                    placeholder="Ingresa tu Contraseña" id="exampleInputPassword1">
-                                <a href="registro.html" id="emailHelp"
-                                    class="form-text text-muted text-decoration-none mt-5">Olvidaste tu Contraseña?</a>
+                                <label for="clave" class="form-label font-weight-bold mb-3">Contraseña</label>
+                                <input type="password" name="clave" class="form-control bg-dark-x border-0 mt-3"
+                                    placeholder="Ingresa tu Contraseña" id="clave" required>
+                                <a href="registro.html" class="form-text text-muted text-decoration-none mt-5">Olvidaste tu Contraseña?</a>
                             </div>
-
+                        
                             <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
-
                         </form>
                         <!-- Fin del formulario -->
                     </div>
