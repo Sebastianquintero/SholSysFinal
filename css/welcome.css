@@ -13,7 +13,7 @@ body.welcome {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../img/fuond.jpg') no-repeat center center fixed;
+    background: url('../img/login_school.jpg') no-repeat center center fixed;
     background-size: cover;
     gap: 100px;
 }
