@@ -48,6 +48,7 @@ h1 {
     width: 100%;
     max-width: 600px; /* Tamaño adecuado */
     text-align: center;
+    padding-top: 110px; /* Ajusta según la altura del navbar */
     
 }
 
