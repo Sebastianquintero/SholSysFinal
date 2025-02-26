@@ -5,7 +5,7 @@
     con el perfil seleccionado (modificarlo)-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Bienvenido</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Favicon -->
     <link href="img/ScholSys_login.jpg" rel="icon">
@@ -29,64 +29,13 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/welcome.css" rel="stylesheet">
 
 
 </head>
 
 <style>
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000; /* Asegura que el encabezado esté siempre visible */
-    }
-
-    body.welcome {
-        margin: 0;
-        padding-top: 90px; /* Asegura que el contenido no se superponga al header */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background: url('img/fuond.jpg') no-repeat center center fixed;
-        background-size: cover;
-        gap: 100px;
-    }
-
-    .boton_modulo {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 250px;
-    width: 250px; /* Ancho fijo */
-    height: 300px; /* Altura fija */
-    text-align: center;
-    display: flex; /* Alineación para centrar */
-    flex-direction: column; /* Para que la imagen y texto estén en columna */
-    justify-content: space-between; /* Espaciado uniforme */
-    align-items: center; /* Centrar el contenido horizontalmente */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-    .boton_modulo:hover {
-        background-color: rgba(200, 200, 200, 0.9); /* Color de fondo al pasar el ratón */
-        transform: scale(1.05); /* Efecto de agrandar ligeramente */
-        cursor: pointer; /* Cambia el cursor a mano */
-    }
-    .boton_modulo img {
-    width: 80%; /* Ajusta el ancho de la imagen para mantener proporciones */
-    height: auto;
-    max-height: 150px; /* Altura máxima para evitar desbordamiento */
-    object-fit: contain;
-    margin-bottom: 10px;
-    }
-
-    .boton_modulo span {
-    font-size: 16px; /* Tamaño uniforme para el texto */
-    line-height: 1.5;
-    color: #333; /* Color del texto */
-    }
+    
 
 </style>
 
@@ -101,7 +50,7 @@
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <span class="far fa-envelope me-2"></span>
-                    <span>syscoco@syscoco.com</span>
+                    <span>ScholSys@ScholSys.com</span>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
@@ -121,13 +70,13 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0">SysCoco</h1>
+            <h1 class="m-0">ScholSys</h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-                <p style="text-align: center;">Bienvenidos a SysCoco</p>
+                <p style="text-align: center;">Bienvenidos a ScholSys</p>
             
                 
         </div>
