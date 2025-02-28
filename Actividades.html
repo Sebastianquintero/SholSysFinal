@@ -17,6 +17,7 @@
     <link href="css/materialize.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/style2.css" rel="stylesheet" />
+    <link href="css/actividades.css" rel="stylesheet" />
     <!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
     <link href="css/style-mob.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -142,72 +143,72 @@
 
     <!--== Formulario Actividades Pendientes ==-->
     <div class="activities-list">
-        <h4>Lista de Actividades</h4>
+    <h4>Lista de Actividades</h4>
 
-        <!-- Filtros de Actividades -->
-        <div class="row">
-            <div class="col-md-6">
-                <label for="estado-actividad">Filtrar por Estado:</label>
-                <select id="estado-actividad" name="estado-actividad" class="form-control">
-                    <option value="pendiente">Pendiente por Evaluar</option>
-                    <option value="cerrada">Cerrada</option>
-                    <option value="todas">Todas</option>
-                </select>
-            </div>
-            <div class="col-md-6">
-                <label for="fecha-actividad">Filtrar por Fecha:</label>
-                <input type="date" id="fecha-actividad" name="fecha-actividad" class="form-control">
-            </div>
+    <!-- Filtros de Actividades -->
+    <div class="row">
+        <div class="col-md-6">
+            <label for="estado-actividad">Filtrar por Estado:</label>
+            <select id="estado-actividad">
+                <option value="pendiente">Pendiente por Evaluar</option>
+                <option value="cerrada">Cerrada</option>
+                <option value="todas">Todas</option>
+            </select>
         </div>
-
-        <!-- Tabla de Actividades -->
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Actividad</th>
-                    <th>Fecha de Creación</th>
-                    <th>Fecha de Cierre</th>
-                    <th>Estado</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Evaluación de Proyecto</td>
-                    <td>2024-12-01</td>
-                    <td>2024-12-10</td>
-                    <td><span class="badge badge-warning">Pendiente</span></td>
-                    <td>
-                        <button class="btn btn-primary btn-sm">Ver Detalles</button>
-                        <button class="btn btn-success btn-sm">Cerrar Actividad</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Revisión de Tarea</td>
-                    <td>2024-11-25</td>
-                    <td>2024-12-05</td>
-                    <td><span class="badge badge-success">Cerrada</span></td>
-                    <td>
-                        <button class="btn btn-primary btn-sm">Ver Detalles</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Prueba Final de Curso</td>
-                    <td>2024-11-28</td>
-                    <td>2024-12-06</td>
-                    <td><span class="badge badge-warning">Pendiente</span></td>
-                    <td>
-                        <button class="btn btn-primary btn-sm">Ver Detalles</button>
-                        <button class="btn btn-success btn-sm">Cerrar Actividad</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="col-md-6">
+            <label for="fecha-actividad">Filtrar por Fecha:</label>
+            <input type="date" id="fecha-actividad" class="form-control">
+        </div>
     </div>
+
+    <!-- Tabla de Actividades -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Actividad</th>
+                <th>Fecha de Creación</th>
+                <th>Fecha de Cierre</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="ID">1</td>
+                <td data-label="Actividad">Evaluación de Proyecto</td>
+                <td data-label="Fecha de Creación">2024-12-01</td>
+                <td data-label="Fecha de Cierre">2024-12-10</td>
+                <td data-label="Estado"><span class="badge badge-warning">Pendiente</span></td>
+                <td data-label="Acciones">
+                    <button class="btn btn-primary btn-sm">Ver Detalles</button>
+                    <button class="btn btn-success btn-sm">Cerrar</button>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="ID">2</td>
+                <td data-label="Actividad">Revisión de Tarea</td>
+                <td data-label="Fecha de Creación">2024-11-25</td>
+                <td data-label="Fecha de Cierre">2024-12-05</td>
+                <td data-label="Estado"><span class="badge badge-success">Cerrada</span></td>
+                <td data-label="Acciones">
+                    <button class="btn btn-primary btn-sm">Ver Detalles</button>
+                </td>
+            </tr>
+            <tr>
+                <td data-label="ID">3</td>
+                <td data-label="Actividad">Prueba Final de Curso</td>
+                <td data-label="Fecha de Creación">2024-11-28</td>
+                <td data-label="Fecha de Cierre">2024-12-06</td>
+                <td data-label="Estado"><span class="badge badge-warning">Pendiente</span></td>
+                <td data-label="Acciones">
+                    <button class="btn btn-primary btn-sm">Ver Detalles</button>
+                    <button class="btn btn-success btn-sm">Cerrar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 </div>
 
                 
