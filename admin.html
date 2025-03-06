@@ -42,6 +42,7 @@
                     <h1 class="m0">ScholSys</h1>
                 </a>
             </div>
+            <!--== cambio de menus para admin nav ==-->
             <!--== SEARCH ==-->
             <div class="col-md-6 col-sm-6 mob-hide">
                 <form class="app-search">
@@ -52,9 +53,9 @@
             <!--== NOTIFICATION ==-->
             <div class="col-md-2 tab-hide">
                 <div class="top-not-cen">
-                    <a class='waves-effect btn-noti' href="admin-all-enquiry.html" title="all enquiry messages"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>5</span></a>
-                    <a class='waves-effect btn-noti' href="admin-course-enquiry.html" title="course booking messages"><i class="fa fa-envelope-o" aria-hidden="true"></i><span>5</span></a>
-                    <a class='waves-effect btn-noti' href="admin-admission-enquiry.html" title="admission enquiry"><i class="fa fa-tag" aria-hidden="true"></i><span>5</span></a>
+                    <a class='waves-effect btn-noti' href="#" title="principal"><i class="fa fa-commenting-o" aria-hidden="true"></i><span></span></a>
+                    <a class='waves-effect btn-noti' href="#" title="correo"><i class="fa fa-envelope-o" aria-hidden="true"></i><span></span></a>
+                    <a class='waves-effect btn-noti' href="#" title=""><i class="fa fa-tag" aria-hidden="true"></i><span></span></a>
                 </div>
             </div>
             <!--== MY ACCCOUNT ==-->
@@ -65,13 +66,13 @@
 
                 <!-- Dropdown Structure -->
                 <ul id='top-menu' class='dropdown-content top-menu-sty'>
-                    <li><a href="admin-panel-setting.html" class="waves-effect"><i class="fa fa-cogs" aria-hidden="true"></i>Config de perfil</a>
+                    <li><a href="admin-info-cuenta.html" class="waves-effect"><i class="fa fa-cogs" aria-hidden="true"></i>Config de perfil</a>
                     </li>
                     <li class="divider"></li>
-                    <li><a href="#" class="ho-dr-con-last waves-effect"><i class="fa fa-sign-in" aria-hidden="true"></i>Cerrar sesion</a>
+                    <li><a href="index.html" class="ho-dr-con-last waves-effect"><i class="fa fa-sign-in" aria-hidden="true"></i>Cerrar sesion</a>
                     </li>
                 </ul>
-            </div>
+            </div><!--== hasta aca admin menu nav ==-->
         </div>
     </div>
 
@@ -224,12 +225,10 @@
                 <!--== breadcrumbs ==-->
                 <div class="sb2-2-2">
                     <ul>
-                        <li><a href="index-2.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        <li><a href="admin.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                         </li>
                         <li class="active-bre"><a href="#"> Dashboard</a>
-                        </li>
-                        <li class="page-back"><a href="index-2.html"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
-                        </li>
+                        
                     </ul>
                 </div>
                 <!--== DASHBOARD INFO ==-->
@@ -240,30 +239,30 @@
                         <ul>
                             <li>
                                 <div class="dash-book dash-b-1">
-                                    <h5>All Courses</h5>
-                                    <h4>948</h4>
-                                    <a href="#">View more</a>
+                                    <h5>Cursos</h5>
+                                    <h4>200</h4>
+                                    <a href="#">Ver mas</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="dash-book dash-b-2">
-                                    <h5>Admission</h5>
-                                    <h4>672</h4>
-                                    <a href="#">View more</a>
+                                    <h5>Estudiantes</h5>
+                                    <h4>1250</h4>
+                                    <a href="#">Ver mas</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="dash-book dash-b-3">
-                                    <h5>Students</h5>
-                                    <h4>689</h4>
-                                    <a href="#">View more</a>
+                                    <h5>Profesores</h5>
+                                    <h4>30</h4>
+                                    <a href="#">Ver mas</a>
                                 </div>
                             </li>
                             <li>
                                 <div class="dash-book dash-b-4">
-                                    <h5>Enquiry</h5>
-                                    <h4>24</h4>
-                                    <a href="#">View more</a>
+                                    <h5>Graduados</h5>
+                                    <h4>750</h4>
+                                    <a href="#">Ver mas</a>
                                 </div>
                             </li>
                         </ul>
@@ -276,7 +275,7 @@
                         <div class="col-md-12">
                             <div class="box-inn-sp">
                                 <div class="inn-title">
-                                    <h4>Student Details</h4>
+                                    <h4>Detalles de estudiantes</h4>
                                     <p>All about students like name, student id, phone, email, country, city and more</p>
                                 </div>
                                 <div class="tab-inn">
@@ -284,15 +283,15 @@
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th>User</th>
-                                                    <th>Name</th>
-                                                    <th>Phone</th>
+                                                    <th>Usuario</th>
+                                                    <th>Nombre</th>
+                                                    <th>Tel</th>
                                                     <th>Email</th>
-                                                    <th>Country</th>
+                                                    <th>Ciudad</th>
                                                     <th>Id</th>
-                                                    <th>Date of birth</th>
-													<th>Status</th>
-													<th>View</th>
+                                                    <th>Fecha Nacimiento</th>
+													<th>Estado</th>
+													<th>Ver</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -431,7 +430,7 @@
                         <div class="col-md-12">
                             <div class="box-inn-sp">
                                 <div class="inn-title">
-                                    <h4>Course Details</h4>
+                                    <h4>Detalles de los profesores</h4>
                                     <p>All about courses, program structure, fees, best course lists (ranking), syllabus, teaching techniques and other details.</p>
                                 </div>
                                 <div class="tab-inn">
@@ -439,15 +438,14 @@
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th>Image</th>
-                                                    <th>Course Name</th>
-													<th>Category</th>
-                                                    <th>Durations</th>
-													<th>Start Date</th>
-                                                    <th>End Date</th>
+                                                    <th>Usuario</th>
+                                                    <th>Nombre</th>
+													<th>Puesto</th>
+													<th>Fecha inicio</th>
+                                                    <th>Fecha fin</th>
                                                     <th>Total Seats</th>
-													<th>Status</th>
-													<th>View</th>
+													<th>Estado</th>
+													<th>Ver</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -460,7 +458,7 @@
                                                     <td>60 Days(420hrs)</td>
                                                     <td>03 Jun 2018</td>
                                                     <td>12 Aug 2018</td>
-													<td>74</td>
+													
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
@@ -475,7 +473,7 @@
                                                     <td>30 Days(420hrs)</td>
                                                     <td>01 Nov 2018</td>
                                                     <td>01 Dec 2018</td>
-													<td>30</td>
+													
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
@@ -490,7 +488,7 @@
                                                     <td>25 Days(420hrs)</td>
                                                     <td>05 Jan 2018</td>
                                                     <td>25 Jan 2018</td>
-													<td>25</td>
+													
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
@@ -505,7 +503,7 @@
                                                     <td>06 Months</td>
                                                     <td>12 Feb 2018</td>
                                                     <td>14 Aug 2018</td>
-													<td>68</td>
+													
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
@@ -520,7 +518,7 @@
                                                     <td>1 Year</td>
                                                     <td>05 Mar 2018</td>
                                                     <td>16 Mar 2018</td>
-													<td>72</td>
+													
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
@@ -535,7 +533,7 @@
                                                     <td>60 Days(420hrs)</td>
                                                     <td>03 Jun 2018</td>
                                                     <td>12 Aug 2018</td>
-													<td>74</td>
+													
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
@@ -550,7 +548,7 @@
                                                     <td>30 Days(420hrs)</td>
                                                     <td>01 Nov 2018</td>
                                                     <td>01 Dec 2018</td>
-													<td>30</td>
+													
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
@@ -565,7 +563,7 @@
                                                     <td>25 Days(420hrs)</td>
                                                     <td>05 Jan 2018</td>
                                                     <td>25 Jan 2018</td>
-													<td>25</td>
+													
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
@@ -580,7 +578,7 @@
                                                     <td>06 Months</td>
                                                     <td>12 Feb 2018</td>
                                                     <td>14 Aug 2018</td>
-													<td>68</td>
+													
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
@@ -595,7 +593,7 @@
                                                     <td>1 Year</td>
                                                     <td>05 Mar 2018</td>
                                                     <td>16 Mar 2018</td>
-													<td>72</td>
+													
                                                     <td>
                                                         <span class="label label-success">Active</span>
                                                     </td>
@@ -612,23 +610,23 @@
 				
                 <div class="sb2-2-3">
                     <div class="row">
-                        <!--== Country Campaigns ==-->
+                        <!--== Cursos ==-->
                         <div class="col-md-6">
                             <div class="box-inn-sp">
                                 <div class="inn-title">
-                                    <h4>Job Openings</h4>
-                                    <p>Randomised words which don't look even slightly believable. If you are going to use a passage</p>
+                                    <h4>Cursos</h4>
+                                    
                                 </div>
                                 <div class="tab-inn">
                                     <div class="table-responsive table-desi">
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th>Company</th>
-                                                    <th>Openings</th>
-                                                    <th>Date</th>
-                                                    <th>Location</th>
-                                                    <th>Status</th>
+                                                    <th>Curso</th>
+                                                    <th>Estudiantes</th>
+                                                    <th>Fecha</th>
+                                                    <th>Locacion</th>
+                                                    <th>Estado</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -679,12 +677,12 @@
                             </div>
                         </div>
 
-                        <!--== Country Campaigns ==-->
+                        <!--== Detalles de eventos (por confirmar) ==-->
                         <div class="col-md-6">
                             <div class="box-inn-sp">
                                 <div class="inn-title">
-                                    <h4>Event Details</h4>
-                                    <p>Education is about teaching, learning skills and knowledge.</p>
+                                    <h4>Comunicados</h4>
+                                    
                                 </div>
                                 <div class="tab-inn">
                                     <div class="table-responsive table-desi">
@@ -888,8 +886,8 @@
                         <div class="col-md-6">
                             <div class="box-inn-sp">
                                 <div class="inn-title">
-                                    <h4>Latest Activity</h4>
-                                    <p>Education is about teaching, learning skills and knowledge.</p>
+                                    <h4>Ultimas actividades</h4>
+                                    
                                 </div>
                                 <div class="tab-inn list-act-hom">
                                     <ul>
@@ -908,16 +906,7 @@
                                             <h4><span>27 July, 2017</span> Awards and Achievement</h4>
                                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                                         </li>
-                                        <li class="list-act-hom-con">
-                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                            <h4><span>14 Aug, 2017</span> Facilities and Management</h4>
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                                        </li>
-                                        <li class="list-act-hom-con">
-                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                            <h4><span>24 Sep, 2017</span> Nation award winning 2017</h4>
-                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -927,8 +916,8 @@
                         <div class="col-md-6">
                             <div class="box-inn-sp">
                                 <div class="inn-title">
-                                    <h4>Social Media</h4>
-                                    <p>Education is about teaching, learning skills and knowledge.</p>
+                                    <h4>Medios sociales</h4>
+                                    
                                 </div>
                                 <div class="tab-inn">
                                     <div class="table-responsive table-desi">
@@ -936,10 +925,9 @@
                                             <thead>
                                                 <tr>
                                                     <th>Media</th>
-                                                    <th>Name</th>
-                                                    <th>Share</th>
-                                                    <th>Like</th>
-                                                    <th>Members</th>
+                                                    <th>Nombre</th>
+                                                    <th>compartido</th>
+                                                    <th>Me gusta</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -950,20 +938,9 @@
                                                     </td>
                                                     <td>15K</td>
                                                     <td>18K</td>
-                                                    <td>
-                                                        <span class="label label-success">263</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="list-img"><img src="images/sm/2.png" alt=""></span>
-                                                    </td>
-                                                    <td><span class="list-enq-name">Twitter</span><span class="list-enq-city">Illunois, United States</span>
-                                                    </td>
-                                                    <td>15K</td>
-                                                    <td>18K</td>
-                                                    <td>
-                                                        <span class="label label-success">263</span>
-                                                    </td>
+                                                
+                                                        
+                                                    
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/sm/3.png" alt=""></span>
@@ -972,21 +949,11 @@
                                                     </td>
                                                     <td>15K</td>
                                                     <td>18K</td>
-                                                    <td>
-                                                        <span class="label label-success">263</span>
-                                                    </td>
+                                                
+                                                        
+                                                    
                                                 </tr>
-                                                <tr>
-                                                    <td><span class="list-img"><img src="images/sm/4.png" alt=""></span>
-                                                    </td>
-                                                    <td><span class="list-enq-name">Google Plus</span><span class="list-enq-city">Illunois, United States</span>
-                                                    </td>
-                                                    <td>15K</td>
-                                                    <td>18K</td>
-                                                    <td>
-                                                        <span class="label label-success">263</span>
-                                                    </td>
-                                                </tr>
+                                                
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/sm/5.png" alt=""></span>
                                                     </td>
@@ -994,9 +961,9 @@
                                                     </td>
                                                     <td>15K</td>
                                                     <td>18K</td>
-                                                    <td>
-                                                        <span class="label label-success">263</span>
-                                                    </td>
+                                                
+                                                        
+                                                    
                                                 </tr>
                                                 <tr>
                                                     <td><span class="list-img"><img src="images/sm/6.png" alt=""></span>
@@ -1005,52 +972,14 @@
                                                     </td>
                                                     <td>15K</td>
                                                     <td>18K</td>
-                                                    <td>
-                                                        <span class="label label-success">263</span>
-                                                    </td>
+                                                
+                                                        
+                                                    
                                                 </tr>
-                                                <tr>
-                                                    <td><span class="list-img"><img src="images/sm/7.png" alt=""></span>
-                                                    </td>
-                                                    <td><span class="list-enq-name">VK</span><span class="list-enq-city">Illunois, United States</span>
-                                                    </td>
-                                                    <td>15K</td>
-                                                    <td>18K</td>
-                                                    <td>
-                                                        <span class="label label-success">263</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="list-img"><img src="images/sm/2.png" alt=""></span>
-                                                    </td>
-                                                    <td><span class="list-enq-name">Twitter</span><span class="list-enq-city">Illunois, United States</span>
-                                                    </td>
-                                                    <td>15K</td>
-                                                    <td>18K</td>
-                                                    <td>
-                                                        <span class="label label-success">263</span>
-                                                    </td>
-                                                </tr>
+                                                
+                                                
                                             </tbody>
                                         </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--== User Details ==-->
-                <div class="sb2-2-3">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="box-inn-sp">
-                                <div class="inn-title">
-                                    <h4>Google Map</h4>
-                                    <p>Education is about teaching, learning skills and knowledge.</p>
-                                </div>
-                                <div class="tab-inn">
-                                    <div class="table-responsive table-desi tab-map">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6290413.804893654!2d-93.99620524741552!3d39.66116578737809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880b2d386f6e2619%3A0x7f15825064115956!2sIllinois%2C+USA!5e0!3m2!1sen!2sin!4v1469954001005" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
