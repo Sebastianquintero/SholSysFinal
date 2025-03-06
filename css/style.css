@@ -98,7 +98,7 @@ h6,
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    /*z-index: 1000; /* Asegura que esté por encima de otros elementos */
     background-color: white; /* Cambia si deseas otro color */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
